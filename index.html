@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up </title>
+    <link rel="shortcut icon" href="./images/batmanfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="signup-content">
+                <form method="POST" id="signup-form" class="signup-form">
+                    <h2>Sign up </h2>
+                    <p class="desc">to get discount 10% when pre - order use code  <span>“Batman Beyond”</span></p>
+                    <div class="form-group">
+                        <input type="text" class="form-input" oninput="validateUser('name')" name="name" id="name" placeholder="Your Name"/>
+                    </div>
+                    <div class="form-group">
+                        <input oninput="validateUser('email')" type="email" class="form-input" name="email" id="email" placeholder="Email"/>
+                    </div>
+                    <div class="form-group">
+                        <input oninput="validateUser('password')" type="text" class="form-input" name="password" id="password" placeholder="Password"/>
+                        <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to all statements in <a href="#" class="term-service">Terms of service</a></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="registerBtn" class="form-submit submit" value="Sign up"/>
+                        <a href="./pages/login.html" class="submit-link submit">Sign in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

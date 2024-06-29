@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/batmanfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bat-bg position-relative">
+        <div class="layover"></div>
+        <nav class="z-3 bg-black w-100 position-sticky top-0 col-md-6 navbar-expand-lg navbar-bg navbar col-lg-9">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h5 class="navbar-brand mb-0 text-white text-uppercase">BatGamerZone</h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse small ms-auto navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-white ms-auto mb-2 mb-lg-0 menu small">
+                        <li class="nav-item">
+                            <a role="button" class="category text-white nav-link text-uppercase active" aria-current="page" data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="category nav-link text-white text-uppercase" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link category text-white text-uppercase" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link category text-white text-uppercase" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link category text-white text-uppercase" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link category text-white text-uppercase" data-category="pixel">pixel</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a role="button" id="logoutBtn" class="btn-warning btn ms-5 nav-link  text-uppercase">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container my-5 home z-4">
+            <section class="position-relative">
+                <div class="row row-cols-1 row-cols-md-4 my-2 row-cols-lg-4 row-cols-xl-4 g-4" id="gameData">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/logout.js"></script>
+    <script type="module" src="../js/home.js"></script>
+
+</body>
+</html>

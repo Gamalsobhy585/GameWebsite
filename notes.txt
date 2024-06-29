@@ -1,0 +1,6 @@
+لو عاوز تبين ايرور ايرور ف الاليرت 
+  يبقى تعمل اراي اسمها ايرور و تربط كل هنبوت فيلد برسالة ايرور
+
+ui.module.js //////////games.module.js/////////////details.module.js////////test-code.js///////home.js
+  ui.module.js...........display data related to home.html
+     display-details function inside  item.html
