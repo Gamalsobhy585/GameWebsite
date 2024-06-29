@@ -67,4 +67,8 @@ export class GameDetails {
             });
         }
     }
+    // isLoggedIn() {
+    //     const loggedInUser = localStorage.getItem('loggedInUser');
+    //     return loggedInUser !== null;
+    // }
 }

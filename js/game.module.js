@@ -1,5 +1,9 @@
 
 export class GameModule {
+    isLoggedIn() {
+        const loggedInUser = localStorage.getItem('loggedInUser');
+        return loggedInUser !== null;
+    }
     constructor() {
         this.apiKey = 'ed9bfc5b00msh8fd87ca79de53b3p187d19jsn616103e57633';
         this.apiHost = 'free-to-play-games-database.p.rapidapi.com';
@@ -80,10 +84,7 @@ export class GameModule {
         });
     }
 
-    isLoggedIn() {
-        const loggedInUser = localStorage.getItem('loggedInUser');
-        return loggedInUser !== null;
-    }
+  
 
     checkBrowser() {
         if (!$.browser.webkit) {
@@ -97,4 +98,5 @@ export class GameModule {
     }
     
 }
-document.querySelector('.navbar-toggler').classList.add('bg-secondary');
+const gameModule = new GameModule();
+export { gameModule };
