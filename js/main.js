@@ -45,7 +45,7 @@ registerBtn.addEventListener('click', function(event) {
         if (!isEmailAlreadyRegistered(emailInput.value)) {
             if (!isUserNameToken(userName.value)) {
                 addUser();
-                window.location.href = "pages/login.html";
+                window.location.href = "/pages/login.html";
             } else {
                 Swal.fire({
                     icon: "warning",
