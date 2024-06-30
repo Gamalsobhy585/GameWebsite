@@ -45,8 +45,7 @@ registerBtn.addEventListener('click', function(event) {
         if (!isEmailAlreadyRegistered(emailInput.value)) {
             if (!isUserNameToken(userName.value)) {
                 addUser();
-                window.open("/pages/login.html", "_self"); 
-                 } 
+                window.open("/BatGamerzone/pages/login.html", "_self");                 } 
                  else {
                 Swal.fire({
                     icon: "warning",
