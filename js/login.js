@@ -25,7 +25,7 @@ loginBtn.addEventListener('click', async function(e) {
     let hashedPassword = await hashPassword(loginPassword);  
     if (user.password === hashedPassword) {
       localStorage.setItem('loggedInUser', JSON.stringify(user));
-      window.location.href = '/pages/home.html';  }
+      window.location.href = '/GameWebsite/pages/home.html';  }
       else {
         Swal.fire({
             icon: 'error',
@@ -64,7 +64,7 @@ function hex(buffer) {
 }
 document.addEventListener('DOMContentLoaded', function() {
   if (isLoggedIn()) {
-    window.location.href = '/pages/home.html'; 
+    window.location.href = '/GameWebsite/pages/home.html'; 
   }
 });
 function isLoggedIn() {

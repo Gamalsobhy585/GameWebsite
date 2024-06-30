@@ -6,7 +6,7 @@ const gameModule = new GameModule();
 
 document.addEventListener('DOMContentLoaded', function() {
     if (!gameModule.isLoggedIn()) {
-        window.location.href = '/pages/login.html';
+        window.location.href = '/GameWebsite/pages/login.html';
     } else {
         gameModule.getGames();
     }

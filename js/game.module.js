@@ -49,7 +49,7 @@ export class GameModule {
             gameCard.className = 'col';
 
             gameCard.innerHTML = ` 
-            <a href='/pages/item.html?id=${game.id}'>
+            <a href='/GameWebsite/pages/item.html?id=${game.id}'>
                 <div class="card h-100 bg-secondary" role="button">
                     <div class="card-body">
                         <figure class="position-relative">
@@ -94,7 +94,7 @@ export class GameModule {
 
     logout() {
         localStorage.removeItem('loggedInUser');
-        window.location.href = '/pages/login.html';
+        window.location.href = '/GameWebsite/pages/login.html';
     }
     
 }

@@ -5,7 +5,7 @@ const gameDetails = new GameDetails('ed9bfc5b00msh8fd87ca79de53b3p187d19jsn61610
 
 document.addEventListener('DOMContentLoaded', function() {
     if (!gameModule.isLoggedIn()) {
-        window.location.href = '/pages/login.html';
+        window.location.href = '/GameWebsite/pages/login.html';
     } else {
         const urlParams = new URLSearchParams(window.location.search);
         const gameId = urlParams.get('id');
